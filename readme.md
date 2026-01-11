@@ -20,7 +20,7 @@ _\*Other devices can be supported but for now this is only targeted at what hard
 
 ## Usage
 
-Simply drag-and-drop one or more video, GIF, WebP, or APNG files onto the `Video Importer (L-Connect 3).bat` script and the rest is automated. This script automates the cropping, scaling, and encoding for what L-Connect expects. Input dimensions are parsed, and a check is ran to determine which factor to crop by resulting in a squared 1:1 aspect ratio. From there the video is scaled to 480x, then outputted to the directory based on your AIO model in the expected formats and locations.
+Simply drag-and-drop one or more images or videos onto the `Animation Importer (L-Connect 3).bat` script and the rest is automated. Static images will still work but this is intended for animated formats. This script automates the cropping, scaling, and encoding for what L-Connect expects. Input dimensions are parsed, and a check is ran to determine which factor to crop by resulting in a squared 1:1 aspect ratio. From there the video is scaled to 480x, then outputted to the directory based on your AIO model in the expected formats and locations.
 
 Included is an additional script; `AIO Animation (Squared).bat`. This script allows you to manually create an animation as GIF, MKV, MP4, or WebP as well as choosing the resolution scale. This script does not import the animation to a specific location, and instead will output the converted files to the same location as whatever infilles are used.
 
