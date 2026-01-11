@@ -18,6 +18,11 @@ _\*The OpenRGB Beta is supported_
 
 _\*Other devices can be supported but for now this is only targeted at what hardware I use and have access to._
 
+
+## Disclaimer
+
+When using the import script, new animations or videos will not appear in L-Connect if it is already running and the theme selection screen for the AIO is open. You must either restart L-Connect, or click out of, and back into the screen to refresh it.
+
 ## Usage
 
 Simply drag-and-drop one or more images or videos onto the `Animation Importer (L-Connect 3).bat` script and the rest is automated. Static images will still work but this is intended for animated formats. This script automates the cropping, scaling, and encoding for what L-Connect expects. Input dimensions are parsed, and a check is ran to determine which factor to crop by resulting in a squared 1:1 aspect ratio. From there the video is scaled to 480x, then outputted to the directory based on your AIO model in the expected formats and locations.
