@@ -56,9 +56,9 @@ if not errorlevel 0 (
                         pause > nul
                         exit /b 0
                     ) else (
-                        ffmpeg -hide_banner -y -i %%f -filter:v scale=!Scale!:-1 -f h264 -c:a copy -an "!OutDir!\%%~nf.mp4"
-                        ffmpeg -hide_banner -y -i "!OutDir!\%%~nf.mp4" -pix_fmt yuv420p -c:v libx264 -preset ultrafast "!OutDir!\%%~nf.h264"
-                        ffmpeg -hide_banner -y -i "!OutDir!\%%~nf.mp4" -vf "select=eq(n\,0)" -q:v 3 "!OutDir!\thumbnail\%%~nf.jpg"
+                        ffmpeg -hide_banner -i %%f -filter:v scale=!Scale!:-1 -f h264 -c:a copy -an "!OutDir!\%%~nf.mp4"
+                        ffmpeg -hide_banner -i "!OutDir!\%%~nf.mp4" -pix_fmt yuv420p -c:v libx264 -preset ultrafast "!OutDir!\%%~nf.h264"
+                        ffmpeg -hide_banner -i "!OutDir!\%%~nf.mp4" -vf "select=eq(n\,0)" -q:v 3 "!OutDir!\thumbnail\%%~nf.jpg"
                     )
                 ) else if %%x gtr %%y (
                     if %%y lss !Scale! (
@@ -70,9 +70,9 @@ if not errorlevel 0 (
                         pause > nul
                         exit /b 0
                     ) else (
-                        ffmpeg -hide_banner -y -i %%f -filter:v "crop=%%y:%%y,scale=!Scale!:-1" -f h264 -c:a copy -an "!OutDir!\%%~nf.mp4"
-                        ffmpeg -hide_banner -y -i "!OutDir!\%%~nf.mp4" -pix_fmt yuv420p -c:v libx264 -preset ultrafast "!OutDir!\%%~nf.h264"
-                        ffmpeg -hide_banner -y -i "!OutDir!\%%~nf.mp4" -vf "select=eq(n\,0)" -q:v 3 "!OutDir!\thumbnail\%%~nf.jpg"
+                        ffmpeg -hide_banner -i %%f -filter:v "crop=%%y:%%y,scale=!Scale!:-1" -f h264 -c:a copy -an "!OutDir!\%%~nf.mp4"
+                        ffmpeg -hide_banner -i "!OutDir!\%%~nf.mp4" -pix_fmt yuv420p -c:v libx264 -preset ultrafast "!OutDir!\%%~nf.h264"
+                        ffmpeg -hide_banner -i "!OutDir!\%%~nf.mp4" -vf "select=eq(n\,0)" -q:v 3 "!OutDir!\thumbnail\%%~nf.jpg"
                     )
                 ) else if %%x lss %%y (
                     if %%x lss !Scale! (
@@ -84,9 +84,9 @@ if not errorlevel 0 (
                         pause > nul
                         exit /b 0
                     ) else (
-                        ffmpeg -hide_banner -y -i %%f -filter:v "crop=%%x:%%x,scale=!Scale!:-1" -f h264 -c:a copy -an "!OutDir!\%%~nf.mp4"
-                        ffmpeg -hide_banner -y -i "!OutDir!\%%~nf.mp4" -pix_fmt yuv420p -c:v libx264 -preset ultrafast "!OutDir!\%%~nf.h264"
-                        ffmpeg -hide_banner -y -i "!OutDir!\%%~nf.mp4" -vf "select=eq(n\,0)" -q:v 3 "!OutDir!\thumbnail\%%~nf.jpg"
+                        ffmpeg -hide_banner -i %%f -filter:v "crop=%%x:%%x,scale=!Scale!:-1" -f h264 -c:a copy -an "!OutDir!\%%~nf.mp4"
+                        ffmpeg -hide_banner -i "!OutDir!\%%~nf.mp4" -pix_fmt yuv420p -c:v libx264 -preset ultrafast "!OutDir!\%%~nf.h264"
+                        ffmpeg -hide_banner -i "!OutDir!\%%~nf.mp4" -vf "select=eq(n\,0)" -q:v 3 "!OutDir!\thumbnail\%%~nf.jpg"
                     )
                 )
             )
