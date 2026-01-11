@@ -28,6 +28,6 @@ Included is an additional script; `AIO Animation (Squared).bat`. This script all
 
 - This script does not account for more than one AIO video directory, I do not know if it is possible to have more than one so results may vary if this is the case
 - Linux version pending, both from lack of experience in Bash, and because I don't know if L-Connect even runs on Linux
-- Currently this project only supports 480 x 480 (1:1) output. No other resolutions or aspect ratios are planned for support
 - Crop area selection may be possible, but no plans are made for how to approach other options
 - Paths or file names containing `!` do not work, indeterminate cause or solution
+
