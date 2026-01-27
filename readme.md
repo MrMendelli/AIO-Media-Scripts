@@ -27,7 +27,7 @@ When using the import script, new animations or videos will not appear in L-Conn
 
 Simply drag-and-drop one or more images or videos onto the `Animation Importer (L-Connect 3).bat` script and the rest is automated. Static images will still work but this is intended for animated formats. This script automates the cropping, scaling, and encoding for what L-Connect expects. Input dimensions are parsed, and a check is ran to determine which factor to crop by resulting in a squared 1:1 aspect ratio. From there the video is scaled to 480x, then outputted to the directory based on your AIO model in the expected formats and locations.
 
-Included is an additional script; `AIO Animation (Squared).bat`. This script allows you to manually create an animation as GIF, MKV, MP4, or WebP as well as choosing the resolution scale. This script does not import the animation to a specific location, and instead will output the converted files to the same location as whatever infilles are used.
+Included is an additional script; `AIO Animation (Squared).bat`. This script allows you to manually create an animation as GIF, MKV, MP4, or WebP as well as choosing the resolution scale. This script does not import the animation to a specific location, and instead will output the converted files to the same location as whatever infiles are used.
 
 ## Issues
 
@@ -35,4 +35,5 @@ Included is an additional script; `AIO Animation (Squared).bat`. This script all
 - Linux version pending, both from lack of experience in Bash, and because I don't know if L-Connect even runs on Linux
 - Crop area selection may be possible, but no plans are made for how to approach other options
 - Paths or file names containing `!` do not work, indeterminate cause or solution
+
 
